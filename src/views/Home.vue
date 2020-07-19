@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <DashBoardUserLayout>
+    <router-view name="home"></router-view>
+  </DashBoardUserLayout>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import DashBoardUserLayout from "../layouts/DashBoardUserLayout";
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    DashBoardUserLayout
   }
 };
 </script>
+
+<style lang="scss">
+</style>
